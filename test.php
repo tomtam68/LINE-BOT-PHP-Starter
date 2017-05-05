@@ -36,12 +36,12 @@ if($arrJson['events'][0]['message']['text'] == "สวัสดี"){
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Good Luk >//<";
-}else if($arrJson['events'][0]['message']['text'] == "open"){
+}else if($arrJson['events'][0]['message']['text'] == "open" == "เปิด" ){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
   $arrPostData['messages'][0]['text'] = "Please wait ";
-}else if($arrJson['events'][0]['message']['text'] == "close"){
+}else if($arrJson['events'][0]['message']['text'] == "close" == "ปิด" ){
   $arrPostData = array();
   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
   $arrPostData['messages'][0]['type'] = "text";
